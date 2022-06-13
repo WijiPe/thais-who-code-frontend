@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div  className={styles.logo} >
-                Thai Who Code
+                Thais Who Code
             </div>
         </header>
     )
