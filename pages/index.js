@@ -9,7 +9,7 @@ export default function HomePage({programmers}) {
   )
 }
 
-export async function getServerSideProps(){
+export async function getStaticProps(){
   const res = await fetch(`${API_URL}/api`)
   const programmers = await res.json()
 
