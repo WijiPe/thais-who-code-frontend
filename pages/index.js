@@ -1,10 +1,20 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Layout from '@/components/Layout'
+import { API_URL } from '@/config/index'
 
-export default function Home() {
+export default function HomePage({programmers}) {
   return (
-    <div className={styles.container}>
-    </div>
+    <Layout>
+      <h1>Upcoming Data</h1>
+    </Layout>
   )
+}
+
+export async function getServerSideProps(){
+  const res = await fetch(`${API_URL}/api`)
+  const programmers = await res.json()
+
+  return{
+    props:{programmers},
+    revalidate: 1
+  }
 }
