@@ -18,7 +18,6 @@ export default function Programmer({pgrm}) {
             <Link href={`www.linkedin.com/in/${pgrm.linkedInId}`}>
                     <a>LinkedIn</a>
             </Link>
-            
 
         </div>
     )
