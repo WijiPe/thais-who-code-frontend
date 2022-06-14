@@ -1,11 +1,13 @@
-import styles from '../styles/Header.module.css'
+import styles from '@/styles/Header.module.css'
+import Checkbox from './Checkbox'
 
 export default function Header() {
     return (
         <header className={styles.header}>
             <div  className={styles.logo} >
-                Thais Who Code
+                Thai<span className={styles.small}>s</span> Who Code
             </div>
+            <Checkbox  />
         </header>
     )
 }

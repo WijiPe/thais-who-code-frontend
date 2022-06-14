@@ -5,8 +5,9 @@
       "name": "Wijitra Stevens",
       "location": "Seattle, WA",
       "description": "New grads looking for a job",
+      "titles": ["React Developer", "Python Developer"],
       "image": "https://media-exp2.licdn.com/dms/image/D5635AQEXZym9a161gA/profile-framedphoto-shrink_200_200/0/1648852513747?e=1655762400&v=beta&t=RidBrERIuf7p_jhNr-G8vorUYe8B9FvZtw0iFMg7mTc",
-      "githubId": "wijipe",
+      "githubId": "WijiPe",
       "linkedInId": "wijitra-stevens-475b7684"
     },
     {
@@ -14,9 +15,20 @@
       "name": "Phily Austria",
       "location": "Lakewood, CA",
       "description": "N/A",
+      "titles": "N/A",
       "image": "https://media-exp2.licdn.com/dms/image/C5603AQHfWbcyCdyT0w/profile-displayphoto-shrink_800_800/0/1641685710905?e=1660780800&v=beta&t=hl_DeLR1vuXlGemhjna14-6zQr5DMT2aNgTVmQWnQUk",
       "githubId": "paustria",
       "linkedInId": "phily-austria-4138aa41"
+    },
+    {
+      "id": "3",
+      "name": "Polly Yospan",
+      "location": "Rockville, MD",
+      "description": "N/A",
+      "titles": "N/A",
+      "image": "https://media-exp2.licdn.com/dms/image/D4D35AQFNHAj58EfSYg/profile-framedphoto-shrink_200_200/0/1649279398407?e=1655845200&v=beta&t=HvOukKmk6uOPjJGcmx6ax22invoMbr_rhSvMMwhceB0",
+      "githubId": "PollyYP",
+      "linkedInId": "polly-panissara-yospan"
     }
   ]
 }

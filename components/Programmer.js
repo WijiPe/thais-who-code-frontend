@@ -5,13 +5,14 @@ import styles from '@/styles/Programmer.module.css'
 export default function Programmer({pgrm}) {
     return (
         <div>
-            <Image src={pgrm.image ? pgrm.image : 'programmer Image'} width = {280} height={300}/>
+            <Image src={pgrm.image ? pgrm.image : 'programmer Image'} width = {240} height={260}/>
                 <h1>{pgrm.name}</h1>
                 <p>{pgrm.location}</p>
                 <h4>{pgrm.description}</h4>
+                <h5>{pgrm.titles}</h5>
             <div className={styles.groupLink}>
                 <Link href={`https://github.com/${pgrm.githubId}`}>
-                    <a>Github</a>
+                    <Image src="/images/GitHub-Mark-32px.png" alt="Github" width = {20} height={15} />
                 </Link>
                 <Link href={`www.linkedin.com/in/${pgrm.linkedInId}`}>
                     <a>LinkedIn</a>
