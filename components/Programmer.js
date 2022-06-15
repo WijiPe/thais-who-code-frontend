@@ -12,10 +12,10 @@ export default function Programmer({pgrm}) {
                 <h5>{pgrm.titles}</h5>
             <div className={styles.groupLink}>
                 <Link href={`https://github.com/${pgrm.githubId}`}>
-                    <Image src="/images/GitHub-Mark-32px.png" alt="Github" width = {20} height={15} />
+                    <Image src="/images/GitHub-Mark-32px.png" alt="Github" width = {20} height={20} />
                 </Link>
-                <Link href={`www.linkedin.com/in/${pgrm.linkedInId}`}>
-                    <a>LinkedIn</a>
+                <Link href={`https://linkedin.com/in/${pgrm.linkedInId}`}>
+                    <Image src="/images/linkeIn.png.png" alt="LinkedIn" width = {20} height={20} />
                 </Link>
             </div>
         </div>
