@@ -2,13 +2,21 @@ import Layout from '@/components/Layout'
 import { API_URL } from '@/config/index'
 import Programmer from '@/components/Programmer'
 import styles from "@/styles/Index.module.css"
+import useSWR from 'swr'
 
-export default function HomePage({programmers}) {
+const fetcher = (...args) => fetch(...args).then(res => res.json())
+
+export default function HomePage({}) {
+  const { data, error } = useSWR('/api', fetcher)
+
+  if (error) return <div>failed to load</div>
+  if (!data) return <div>loading...</div>
+
   return (
     <Layout>
-      {programmers.length === 0 && <h3>No programmers to show</h3>}
+      {data.length === 0 && <h3>No programmers to show</h3>}
       <div className={styles.container}>
-        {programmers.map((pgrm) => (
+        {data.map((pgrm) => (
           <Programmer key={pgrm.id} pgrm={pgrm}/>
         ))}
       </div>
@@ -16,12 +24,12 @@ export default function HomePage({programmers}) {
   )
 }
 
-export async function getStaticProps(){
-  const res = await fetch(`${API_URL}/api`)
-  const programmers = await res.json()
+// export async function getStaticProps(){
+//   const res = await fetch(`${API_URL}/api`)
+//   const programmers = await res.json()
 
-  return{
-    props:{programmers},
-    revalidate: 1
-  }
-}
+//   return{
+//     props:{programmers},
+//     revalidate: 1
+//   }
+// }

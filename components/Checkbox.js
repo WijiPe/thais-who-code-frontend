@@ -1,6 +1,7 @@
 import styles from '@/styles/Checkbox.module.css'
 
 export default function Checkbox() {
+
     return (
         <div className={styles.container}>
             <input type="checkbox" id="aws solutions architect" name="aws solutions architect" value="AWS Solutions Architect"></input>
