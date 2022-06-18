@@ -1,7 +1,12 @@
 import '../styles/globals.css'
+import { ContextWrapper } from '../context/ContextObject';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const app = ({ Component, pageProps }) => {
+  return (
+      <ContextWrapper>
+        <Component {...pageProps} />
+      </ContextWrapper>
+  )
 }
 
-export default MyApp
+export default app

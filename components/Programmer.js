@@ -9,7 +9,7 @@ export default function Programmer({pgrm}) {
                 <h1>{pgrm.name}</h1>
                 <p>{pgrm.location}</p>
                 <h4>{pgrm.description}</h4>
-                <h5>{pgrm.titles}</h5>
+                <h5>{pgrm.titles.join(' ')}</h5>
             <div className={styles.groupLink}>
                 <Link href={`https://github.com/${pgrm.githubId}`}>
                     <Image src="/images/GitHub-Mark-32px.png" alt="Github" width = {20} height={20} />
