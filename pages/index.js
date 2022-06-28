@@ -17,7 +17,6 @@ export default function HomePage() {
 
   useEffect(() => { 
     if(!data) return 
-    console.log('hello')
     const filterProgrammers = []
     for(let i = 0; i < data.length; i++){
       let pgrm = data[i]
@@ -27,7 +26,7 @@ export default function HomePage() {
     }
     setShow(filterProgrammers.slice((page-1)*3, page*3))
     setMaxPage(Math.ceil(filterProgrammers.length/3))
-    console.log(filterProgrammers)
+    // console.log(filterProgrammers)
   }, [data, t, page])
 
   // if (error) return <div>failed to load</div>
@@ -40,8 +39,8 @@ export default function HomePage() {
           {show.map((pgrm) => (
             <Programmer key={pgrm.id} pgrm={pgrm}/>
           ))}
-          <PageButton   />
         </div>
+        <PageButton   setPage ={setPage} page={page} maxPage={maxPage} />
       </Layout>
   )
 }
