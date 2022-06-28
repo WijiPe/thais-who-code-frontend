@@ -29,6 +29,76 @@
       "image": "https://media-exp2.licdn.com/dms/image/D4D35AQFNHAj58EfSYg/profile-framedphoto-shrink_200_200/0/1649279398407?e=1655845200&v=beta&t=HvOukKmk6uOPjJGcmx6ax22invoMbr_rhSvMMwhceB0",
       "githubId": "PollyYP",
       "linkedInId": "polly-panissara-yospan"
+    },
+    {
+      "id": "4",
+      "name": "1 Stevens",
+      "location": "Seattle, WA",
+      "description": "New grads looking for a job",
+      "titles": ["React Developer", "Python Developer"],
+      "image": "https://media-exp2.licdn.com/dms/image/D5635AQEXZym9a161gA/profile-framedphoto-shrink_200_200/0/1648852513747?e=1655762400&v=beta&t=RidBrERIuf7p_jhNr-G8vorUYe8B9FvZtw0iFMg7mTc",
+      "githubId": "WijiPe",
+      "linkedInId": "wijitra-stevens-475b7684"
+    },
+    {
+      "id": "5",
+      "name": "2 Stevens",
+      "location": "Seattle, WA",
+      "description": "New grads looking for a job",
+      "titles": ["React Developer", "Python Developer"],
+      "image": "https://media-exp2.licdn.com/dms/image/D5635AQEXZym9a161gA/profile-framedphoto-shrink_200_200/0/1648852513747?e=1655762400&v=beta&t=RidBrERIuf7p_jhNr-G8vorUYe8B9FvZtw0iFMg7mTc",
+      "githubId": "WijiPe",
+      "linkedInId": "wijitra-stevens-475b7684"
+    },
+    {
+      "id": "6",
+      "name": "3 Stevens",
+      "location": "Seattle, WA",
+      "description": "New grads looking for a job",
+      "titles": ["React Developer", "Python Developer"],
+      "image": "https://media-exp2.licdn.com/dms/image/D5635AQEXZym9a161gA/profile-framedphoto-shrink_200_200/0/1648852513747?e=1655762400&v=beta&t=RidBrERIuf7p_jhNr-G8vorUYe8B9FvZtw0iFMg7mTc",
+      "githubId": "WijiPe",
+      "linkedInId": "wijitra-stevens-475b7684"
+    },
+    {
+      "id": "7",
+      "name": "4 Stevens",
+      "location": "Seattle, WA",
+      "description": "New grads looking for a job",
+      "titles": ["React Developer", "Python Developer"],
+      "image": "https://media-exp2.licdn.com/dms/image/D5635AQEXZym9a161gA/profile-framedphoto-shrink_200_200/0/1648852513747?e=1655762400&v=beta&t=RidBrERIuf7p_jhNr-G8vorUYe8B9FvZtw0iFMg7mTc",
+      "githubId": "WijiPe",
+      "linkedInId": "wijitra-stevens-475b7684"
+    },
+    {
+      "id": "8",
+      "name": "5 Stevens",
+      "location": "Seattle, WA",
+      "description": "New grads looking for a job",
+      "titles": ["React Developer", "Python Developer"],
+      "image": "https://media-exp2.licdn.com/dms/image/D5635AQEXZym9a161gA/profile-framedphoto-shrink_200_200/0/1648852513747?e=1655762400&v=beta&t=RidBrERIuf7p_jhNr-G8vorUYe8B9FvZtw0iFMg7mTc",
+      "githubId": "WijiPe",
+      "linkedInId": "wijitra-stevens-475b7684"
+    },
+    {
+      "id": "9",
+      "name": "6 Stevens",
+      "location": "Seattle, WA",
+      "description": "New grads looking for a job",
+      "titles": ["React Developer", "Python Developer"],
+      "image": "https://media-exp2.licdn.com/dms/image/D5635AQEXZym9a161gA/profile-framedphoto-shrink_200_200/0/1648852513747?e=1655762400&v=beta&t=RidBrERIuf7p_jhNr-G8vorUYe8B9FvZtw0iFMg7mTc",
+      "githubId": "WijiPe",
+      "linkedInId": "wijitra-stevens-475b7684"
+    },
+    {
+      "id": "10",
+      "name": "7 Stevens",
+      "location": "Seattle, WA",
+      "description": "New grads looking for a job",
+      "titles": ["React Developer", "Python Developer"],
+      "image": "https://media-exp2.licdn.com/dms/image/D5635AQEXZym9a161gA/profile-framedphoto-shrink_200_200/0/1648852513747?e=1655762400&v=beta&t=RidBrERIuf7p_jhNr-G8vorUYe8B9FvZtw0iFMg7mTc",
+      "githubId": "WijiPe",
+      "linkedInId": "wijitra-stevens-475b7684"
     }
   ]
 }
