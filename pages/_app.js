@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { ContextWrapper } from '../context/ContextObject';
 // import { purple } from '@mui/material/colors';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import Theme from '../src/Theme';
 
 // const theme = createTheme({
@@ -13,7 +13,7 @@ import Theme from '../src/Theme';
 // });
 
 
-const app = ({ Component, pageProps}) => {
+const app = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={Theme}>
       <ContextWrapper>

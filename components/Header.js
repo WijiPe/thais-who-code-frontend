@@ -1,5 +1,6 @@
 import styles from '@/styles/Header.module.css'
 import Checkbox from './Checkbox'
+import Box from '@mui/material/Box';
 
 export default function Header() {
 
@@ -8,7 +9,18 @@ export default function Header() {
             <div  className={styles.logo} >
                 Thai<span className={styles.small}>s</span> Who Code
             </div>
-            <Checkbox />
+            <Box 
+                sx={{
+                    mb: 2,
+                    display: "flex",
+                    flexDirection: "column",
+                    height: 700,
+                    overflow: "hidden",
+                    overflowY: "scroll",
+                }}>
+                <Checkbox />
+            </Box>
+            
         </header>
     )
 }

@@ -1,13 +1,16 @@
-import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 
 export default function PageButton({page, setPage, maxPage}) {
-    let arrayPage = Array.from(Array(maxPage).keys())
+
+    const handleChange = (event, value) => {
+        setPage(value);
+    };
 
     return (
-        <Box
+         <Box
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
@@ -17,11 +20,15 @@ export default function PageButton({page, setPage, maxPage}) {
                 },
             }}
         >
-            <ButtonGroup variant="text" aria-label="text button group" color="primary">
-                {arrayPage.map((numberOfPage, i) => (
-                    <Button key={i} onClick={() => setPage(page=numberOfPage+1)}>{numberOfPage+1}</Button>
-                ))}
-            </ButtonGroup>
+            <Stack spacing={2}>
+                <Pagination count={maxPage} page={page} onChange={handleChange} />
+            </Stack>
         </Box>
+        //     <ButtonGroup variant="text" aria-label="text button group" color="primary">
+        //         {arrayPage.map((numberOfPage, i) => (
+        //             <Button key={i} onClick={() => setPage(page=numberOfPage+1)}>{numberOfPage+1}</Button>
+        //         ))}
+        //     </ButtonGroup>
+
     )
 }
