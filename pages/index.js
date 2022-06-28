@@ -4,6 +4,7 @@ import styles from "@/styles/Index.module.css"
 import { useAppContext } from "../context/ContextObject";
 import useSWR from 'swr'
 import { useState, useEffect } from 'react'
+import PageButton from '@/components/PageButton';
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -39,6 +40,7 @@ export default function HomePage() {
           {show.map((pgrm) => (
             <Programmer key={pgrm.id} pgrm={pgrm}/>
           ))}
+          <PageButton   />
         </div>
       </Layout>
   )
