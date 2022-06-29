@@ -11,10 +11,10 @@ export default function Header() {
             </div>
             <Box 
                 sx={{
-                    mb: 2,
-                    display: "flex",
-                    flexDirection: "column",
-                    height: 700,
+                    // mb: 2,
+                    // display: "flex",
+                    // flexDirection: "column",
+                    height: 600,
                     overflow: "hidden",
                     overflowY: "scroll",
                 }}>
