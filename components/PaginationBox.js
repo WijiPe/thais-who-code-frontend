@@ -3,7 +3,7 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
 
-export default function PageButton({page, setPage, maxPage}) {
+export default function PaginationBox({page, setPage, maxPage}) {
 
     const handleChange = (event, value) => {
         setPage(value);

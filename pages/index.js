@@ -4,7 +4,9 @@ import styles from "@/styles/Index.module.css"
 import { useAppContext } from "../context/ContextObject";
 import useSWR from 'swr'
 import { useState, useEffect } from 'react'
-import PageButton from '@/components/PageButton';
+import PaginationBox from '@/components/PaginationBox';
+import Box from '@mui/material/Box';
+import { StickyNote2 } from '@mui/icons-material';
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -24,8 +26,8 @@ export default function HomePage() {
         filterProgrammers.push(pgrm)
       }
     }
-    setShow(filterProgrammers.slice((page-1)*3, page*3))
-    setMaxPage(Math.ceil(filterProgrammers.length/3))
+    setShow(filterProgrammers.slice((page-1)*7, page*7))
+    setMaxPage(Math.ceil(filterProgrammers.length/7))
     // console.log(filterProgrammers)
   }, [data, t, page])
 
@@ -40,7 +42,15 @@ export default function HomePage() {
             <Programmer key={pgrm.id} pgrm={pgrm}/>
           ))}
         </div>
-        <PageButton   setPage ={setPage} page={page} maxPage={maxPage} />
+        <Box 
+            sx={{
+              height: 100, 
+              margin: 20,
+              
+            }}>
+          <PaginationBox   setPage ={setPage} page={page} maxPage={maxPage} />
+        </Box>
+        
       </Layout>
   )
 }

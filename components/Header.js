@@ -14,6 +14,7 @@ export default function Header() {
                     // mb: 2,
                     // display: "flex",
                     // flexDirection: "column",
+                    width: 300,
                     height: 600,
                     overflow: "hidden",
                     overflowY: "scroll",
