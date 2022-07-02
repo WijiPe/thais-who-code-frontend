@@ -6,7 +6,6 @@ import useSWR from 'swr'
 import { useState, useEffect } from 'react'
 import PaginationBox from '@/components/PaginationBox';
 import Box from '@mui/material/Box';
-import { StickyNote2 } from '@mui/icons-material';
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
