@@ -9,15 +9,39 @@ import Box from '@mui/material/Box';
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
+const shuffle = (array) => {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 export default function HomePage() {
   const [t, setT] = useAppContext();
-  const { data, error } = useSWR('/api', fetcher)
+  const { data: rawData, error } = useSWR('/api', fetcher)
   const [page, setPage] = useState(1)
   const [show, setShow] = useState([])
+  const [data, setData] = useState([])
   const [maxPage, setMaxPage] = useState(0)
 
   useEffect(() => { 
-    if(!data) return 
+    console.log(rawData)
+    if(!rawData) return
+    setData(shuffle([...rawData]))
+  },[rawData])
+
+  useEffect(() => { 
     const filterProgrammers = []
     for(let i = 0; i < data.length; i++){
       let pgrm = data[i]
@@ -44,10 +68,9 @@ export default function HomePage() {
         <Box 
             sx={{
               height: 100, 
-              margin: 20,
-              
+              margin: 20
             }}>
-          <PaginationBox   setPage ={setPage} page={page} maxPage={maxPage} />
+          <PaginationBox   setPage={setPage} page={page} maxPage={maxPage} />
         </Box>
         
       </Layout>
